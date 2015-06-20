@@ -42,7 +42,7 @@ void getCommand() {
     if (newChar == '#') {
       commandStarted = true;
       command = "\0";
-    } else if (newChar == '.') {
+    } else if (newChar == ';') {
       commandStarted = false;
       commandCompleted();
       command = "\0";
