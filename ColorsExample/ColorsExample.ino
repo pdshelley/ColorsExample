@@ -4,7 +4,7 @@
   the LightBlue Bean by Punchthrough Design.
 
   This sketch receives Serial data with a simple packet format
-  of '#' for a start character and '.' as an end character. Start
+  of '#' for a start character and ';' as an end character. Start
   and end characters can be changed easily. Simple error checking 
   is also included. 
   
@@ -31,7 +31,7 @@ void loop() {
 /* 
 This function reads the serial port and checks for the start character '#'
 if the start character if found it will add all received characters to 
-the command buffer until it receives the end command '.' When the end 
+the command buffer until it receives the end command ';' When the end 
 command is received the commandCompleted() function is called.
 if a second start character is found before an end character then the buffer
 is cleared and the process starts over. 
