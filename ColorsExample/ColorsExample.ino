@@ -62,24 +62,31 @@ if there are more than a few lines of code for as in the 'off' example.
 void commandCompleted() {
   if (command == "red") {
     Bean.setLed( 255, 0, 0 );
+    Serial.print("LED turned red");
   }
   if (command == "green") {
     Bean.setLed( 0, 255, 0 ); 
+    Serial.print("LED turned green");
   }
   if (command == "blue") {
     Bean.setLed( 0, 0, 255 );
+    Serial.print("LED turned blue");
   }
   if (command == "yellow") {
-    Bean.setLed( 255, 255, 0 ); 
+    Bean.setLed( 255, 255, 0 );
+    Serial.print("LED turned yellow"); 
   }
   if (command == "orange") {
     Bean.setLed( 255, 60, 0 ); 
+    Serial.print("LED turned orange");
   }
   if (command == "purple") {
     Bean.setLed( 128, 0, 128 );
+    Serial.print("LED turned purple");
   }
   if (command == "white") {
     Bean.setLed( 255, 255, 255 );
+    Serial.print("LED turned white");
   }
   if (command == "off") {
     off();
@@ -92,4 +99,5 @@ lines of code.  This will help maintain clean easy to read code.
 */
 void off() {
   Bean.setLed( 0, 0, 0 );
+  Serial.print("LED turned off");
 }
