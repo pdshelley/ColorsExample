@@ -21,7 +21,7 @@ String command;
 boolean commandStarted = false;
 
 void setup() {
-  Serial.begin(57600);
+  Serial.begin();
 }
 
 void loop() {
